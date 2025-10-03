@@ -69,3 +69,4 @@ export function buildSingabilityMap(featuresList) {
   }
   return map;
 }
+//
