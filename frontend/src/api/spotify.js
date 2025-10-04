@@ -80,3 +80,4 @@ export async function clearRecommendationHistory() {
   await apiFetch(`/recommendations/recent`, { method: "DELETE" });
 }
 //
+//
