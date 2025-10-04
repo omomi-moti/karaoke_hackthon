@@ -52,6 +52,13 @@ export async function fetchRecommendationsFromRecent(limit = 12) {
   return data.tracks || [];
 }
 
+export async function fetchLikedTracks(limit = 20, offset = 0) {
+  const data = await apiFetch(`/liked-tracks?limit=${limit}&offset=${offset}`);
+  const items = Array.isArray(data?.items) ? data.items : [];
+  const tracks = items.map(it => it?.track ?? it).filter(Boolean);
+  return { tracks, total: data?.total ?? tracks.length };
+}
+
 export async function fetchAudioFeatures(trackIds = []) {
   if (!trackIds.length) return [];
   const ids = trackIds.join(",");
@@ -79,5 +86,3 @@ export async function fetchRecommendationHistory() {
 export async function clearRecommendationHistory() {
   await apiFetch(`/recommendations/recent`, { method: "DELETE" });
 }
-//
-//

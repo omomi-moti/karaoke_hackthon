@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+from spotipy.exceptions import SpotifyException
 from spotipy.cache_handler import MemoryCacheHandler
 
 load_dotenv()
@@ -28,7 +29,7 @@ REDIRECT_URI = os.environ.get("SPOTIPY_REDIRECT_URI", "http://127.0.0.1:8000/api
 
 SCOPE = os.environ.get(
     "SPOTIFY_SCOPE",
-    "user-read-email user-read-private user-read-recently-played user-top-read"
+    "user-read-email user-read-private user-read-recently-played user-top-read user-library-read"
 )
 
 SECRET_KEY = os.environ.get("FLASK_SECRET_KEY", "change-me-please")
@@ -227,6 +228,31 @@ def recently_played():
         return jsonify({"items": tracks})
     except Exception as e:
         return jsonify({"error": "failed_to_fetch_recently_played", "details": str(e)}), 500
+
+@app.route(f"{API_PREFIX}/liked-tracks")
+def liked_tracks():
+    need = _require_auth()
+    if need: return need
+    sp = _spotify()
+    if sp is None:
+        return jsonify({"error": "unauthorized"}), 401
+    try:
+        limit = int(request.args.get("limit", 20))
+        offset = int(request.args.get("offset", 0))
+        res = sp.current_user_saved_tracks(limit=limit, offset=offset)
+        items = res.get("items", [])
+        tracks = [it.get("track") for it in items if it.get("track")]
+        return jsonify({"items": tracks, "total": res.get("total")})
+    except SpotifyException as se:
+        msg = str(se)
+        if getattr(se, "http_status", None) == 403 or (msg and "Insufficient client scope" in msg):
+            return jsonify({
+                "error": "insufficient_scope",
+                "details": "user-library-read scope required. Please logout and login again.",
+            }), 403
+        return jsonify({"error": "failed_to_fetch_liked_tracks", "details": msg}), 500
+    except Exception as e:
+        return jsonify({"error": "failed_to_fetch_liked_tracks", "details": str(e)}), 500
 
 @app.route(f"{API_PREFIX}/audio-features")
 def audio_features():

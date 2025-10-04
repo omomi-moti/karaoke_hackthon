@@ -1,10 +1,23 @@
-// 役割: 最近聴いた曲のリスト表示（コメント/選択に追加ボタン付き）
+// 役割: 最近�EぁE��曲のリスト表示�E�コメントへクイチE��追加ボタン付き�E�E
+import React from "react";
+import SongItem from "./SongItem";
+
+export default function RecentPlayList({ tracks, onQuickAdd, onAddSelected }) {
+  if (!tracks?.length) return <div>最近�EぁE��曲がありません、E/div>;
+  return (
+    <div className="list">
+      {tracks.map(t => (
+        <SongItem key={t.id} track={t} onQuickAdd={onQuickAdd} onAddSelected={onAddSelected} />
+      ))}
+    </div>
+  );
+}
 import React from "react";
 import SongItem from "./SongItem";
 
 export default function RecentPlayList({ tracks, onQuickAdd, onAddSelected }) {
   const list = Array.isArray(tracks) ? tracks : [];
-  if (!list.length) return <div>最近聴いた曲がありません。</div>;
+  if (!list.length) return <div>最近�EぁE��曲がありません、E/div>;
 
   // De-duplicate by track id/uri to avoid key collisions
   const seen = new Set();
