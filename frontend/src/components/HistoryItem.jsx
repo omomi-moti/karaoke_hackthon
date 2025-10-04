@@ -1,4 +1,4 @@
-// 役割: 履歴1件の表示（曲名/アーティスト/コメント/点数 + 削除ボタン）
+// 役割: コメント1件の表示（曲名/アーティスト/コメント/点数 + 削除ボタン）
 import React from "react";
 
 export default function HistoryItem({ item, onDelete }) {
