@@ -1,5 +1,4 @@
-// 役割: 履歴1件の表示（曲名/アーティスト/コメント/点数 + 削除ボタン）
-import React from "react";
+"use client"
 
 export default function HistoryItem({ item, onDelete }) {
   return (
@@ -11,8 +10,10 @@ export default function HistoryItem({ item, onDelete }) {
       </div>
       <div className="right">
         <div className="score">点数: {item.score ?? "-"}</div>
-        <button className="btn btn-danger" onClick={() => onDelete?.(item.id)}>削除</button>
+        <button className="btn btn-danger" onClick={() => onDelete?.(item.id)}>
+          削除
+        </button>
       </div>
     </div>
-  );
+  )
 }
