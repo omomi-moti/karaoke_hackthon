@@ -1,4 +1,4 @@
-// 役割: 最近のおすすめ履歴を表示（最新順）
+// 役割: 最近のおすすめを表示（最新順）
 import React from "react";
 import RecommendationList from "./RecommendationList";
 
@@ -14,7 +14,7 @@ function formatTs(ts) {
 
 export default function RecentRecommendations({ entries }) {
   const list = Array.isArray(entries) ? entries : [];
-  if (!list.length) return <div>最近のおすすめ履歴はまだありません。</div>;
+  if (!list.length) return <div>最近のおすすめコメントはまだありません。</div>;
   const compressed = [];
   let prevSig = null;
   for (const e of list) {
