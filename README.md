@@ -1,4 +1,4 @@
-<img width="2488" height="1304" alt="スクリーンショット 2025-12-14 184253" src="https://github.com/user-attachments/assets/e79f4c52-96c3-42f3-8cab-37cd6b026336" /># 🎤 KaraPoke (カラポケ)
+# 🎤 KaraPoke (カラポケ)
 **〜Spotify履歴から「歌いたい」を可視化する。カラオケ体験向上アプリ〜**
 
 ![KaraPoke Demo](./demo.gif)
