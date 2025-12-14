@@ -7,7 +7,7 @@
 **チーム名：マサイ族**
 
 > 初めてのハッカソン挑戦でしたが、チーム一丸となって技術課題を乗り越え、受賞することができました。
-[マサイ族.pdf](https://github.com/user-attachments/files/24148783/default.pdf)
+[マサイ族.pdf](https://github.com/omomi-moti/karaoke_hackthon/blob/main/%E3%83%9E%E3%82%B5%E3%82%A4%E6%97%8F.pdf)
 
 ## 💡 背景・課題 (Why)
 カラオケに行った際、「次、何を歌おう？」と悩み、履歴を探す時間を無駄にしてしまう経験から着想を得ました。
