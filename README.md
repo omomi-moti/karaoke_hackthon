@@ -2,21 +2,22 @@
 **〜Spotify履歴から「歌いたい」を可視化する。カラオケ体験向上アプリ〜**
 
 ![KaraPoke Demo](./demo.gif)
+
 ## 🏆 受賞歴
 **技育CAMPハッカソン Vol.13 努力賞 受賞**
 **チーム名：マサイ族**
 
 > 初めてのハッカソン挑戦でしたが、チーム一丸となって技術課題を乗り越え、受賞することができました。
+
 [マサイ族.pdf](https://github.com/omomi-moti/karaoke_hackthon/blob/main/%E3%83%9E%E3%82%B5%E3%82%A4%E6%97%8F.pdf)
->
-> 
+
 ## アプリ画面
- <img width="2551" height="1331" alt="スクリーンショット 2025-12-14 183513" src="https://github.com/user-attachments/assets/61bcc62d-d5b4-44fe-bee2-1e3f38c86a31" />
- <img width="2519" height="1344" alt="スクリーンショット 2025-12-14 184000" src="https://github.com/user-attachments/assets/74c187c8-4ae1-4f7b-9d1b-66038abc5e7b" />
- <img width="2535" height="1330" alt="スクリーンショット 2025-12-14 183721" src="https://github.com/user-attachments/assets/612d9057-760f-4856-89b0-365f969ada5e" />
- <img width="2488" height="1304" alt="スクリーンショット 2025-12-14 184253" src="https://github.com/user-attachments/assets/8a157df0-fe4d-414b-bf4e-f821d5525887" />
- <img width="2388" height="1326" alt="スクリーンショット 2025-12-14 184307" src="https://github.com/user-attachments/assets/a38e31ca-aff3-45e2-984c-4fed998f7f5c" />
- <img width="2474" height="1316" alt="スクリーンショット 2025-12-14 184323" src="https://github.com/user-attachments/assets/9dedd466-273c-41cb-84d0-82d36855880e" />
+<img width="2551" height="1331" alt="スクリーンショット 2025-12-14 183513" src="https://github.com/user-attachments/assets/61bcc62d-d5b4-44fe-bee2-1e3f38c86a31" />
+<img width="2519" height="1344" alt="スクリーンショット 2025-12-14 184000" src="https://github.com/user-attachments/assets/74c187c8-4ae1-4f7b-9d1b-66038abc5e7b" />
+<img width="2535" height="1330" alt="スクリーンショット 2025-12-14 183721" src="https://github.com/user-attachments/assets/612d9057-760f-4856-89b0-365f969ada5e" />
+<img width="2488" height="1304" alt="スクリーンショット 2025-12-14 184253" src="https://github.com/user-attachments/assets/8a157df0-fe4d-414b-bf4e-f821d5525887" />
+<img width="2388" height="1326" alt="スクリーンショット 2025-12-14 184307" src="https://github.com/user-attachments/assets/a38e31ca-aff3-45e2-984c-4fed998f7f5c" />
+<img width="2474" height="1316" alt="スクリーンショット 2025-12-14 184323" src="https://github.com/user-attachments/assets/9dedd466-273c-41cb-84d0-82d36855880e" />
 
 ## 💡 背景・課題 (Why)
 カラオケに行った際、「次、何を歌おう？」と悩み、履歴を探す時間を無駄にしてしまう経験から着想を得ました。
@@ -42,6 +43,14 @@
 * **Libraries**: Spotipy (Spotify API wrapper), Flask-CORS
 * **Authentication**: OAuth 2.0 (Authorization Code Flow)
 
+## 👥 チーム構成 (Team)
+**メンバー：3名**
+* Frontend Engineer
+* Backend Engineer
+* **Infrastructure / Implementation Linkage (私)**
+
+※ 互いの得意分野を活かしつつ、バグ修正などは全員で協力して行いました。
+
 ## 🧑‍💻 私の担当箇所 (Role)
 **ポジション：Git管理・フロントエンド/バックエンド連携**
 
@@ -64,6 +73,9 @@
 ## 🚀 今後の課題と振り返り (Reflections)
 初めてのハッカソンで「動くものを作る」ことに注力した結果、多くの学びと課題が得られました。
 
+* **チーム開発における役割分担の難しさ**:
+    * 開発当初、「誰がどこまで実装するか」の境界線が曖昧だったため、作業が重複したり、逆に連携部分（APIのレスポンス形式など）で認識のズレが生じる場面がありました。
+    * 「走りながら考える」だけでなく、最初にインターフェースの仕様や分担を明確に決めておくことの重要性を痛感しました。
 * **Git運用の改善**:
     * 開発スピードを優先したため、コミット粒度が大きくなりがちでした。今後は機能単位でのブランチ運用や、プルリクエストベースの開発を徹底し、履歴をきれいに保つ運用を心がけたいです。
 * **エラーハンドリングの強化**:
