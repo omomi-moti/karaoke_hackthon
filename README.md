@@ -10,7 +10,7 @@
 [マサイ族.pdf](https://github.com/omomi-moti/karaoke_hackthon/blob/main/%E3%83%9E%E3%82%B5%E3%82%A4%E6%97%8F.pdf)
 >
 > 
-**アプリ画面
+## アプリ画面
  <img width="2551" height="1331" alt="スクリーンショット 2025-12-14 183513" src="https://github.com/user-attachments/assets/61bcc62d-d5b4-44fe-bee2-1e3f38c86a31" />
  <img width="2519" height="1344" alt="スクリーンショット 2025-12-14 184000" src="https://github.com/user-attachments/assets/74c187c8-4ae1-4f7b-9d1b-66038abc5e7b" />
  <img width="2535" height="1330" alt="スクリーンショット 2025-12-14 183721" src="https://github.com/user-attachments/assets/612d9057-760f-4856-89b0-365f969ada5e" />
