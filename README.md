@@ -8,6 +8,9 @@
 
 > 初めてのハッカソン挑戦でしたが、チーム一丸となって技術課題を乗り越え、受賞することができました。
 [マサイ族.pdf](https://github.com/omomi-moti/karaoke_hackthon/blob/main/%E3%83%9E%E3%82%B5%E3%82%A4%E6%97%8F.pdf)
+##アプリ画面
+> <img width="2551" height="1331" alt="スクリーンショット 2025-12-14 183513" src="https://github.com/user-attachments/assets/61bcc62d-d5b4-44fe-bee2-1e3f38c86a31" />
+
 
 ## 💡 背景・課題 (Why)
 カラオケに行った際、「次、何を歌おう？」と悩み、履歴を探す時間を無駄にしてしまう経験から着想を得ました。
