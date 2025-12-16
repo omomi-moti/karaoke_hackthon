@@ -87,5 +87,6 @@
 
 ## 📢 発表資料 (Presentation)
 ハッカソン当日のプレゼンテーション資料です。企画背景や詳細な機能フローはこちらをご覧ください。
+[KaraokeHelper.pdf](https://github.com/user-attachments/files/24180285/KaraokeHelper.pdf)
 
-[📄 プレゼン資料を見る (PDF)](./Presentation_Masai.pdf)
+
