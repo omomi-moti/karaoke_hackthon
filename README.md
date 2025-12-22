@@ -11,9 +11,13 @@
 ![マサイ族_page-0001](https://github.com/user-attachments/assets/65cf294e-0854-4a12-af14-9aa058afb4ee)
 
 ## アプリ画面
-<img width="2551" height="1331" alt="メイン画面" src="https://github.com/user-attachments/assets/61bcc62d-d5b4-44fe-bee2-1e3f38c86a31" />
-<img width="2519" height="1344" alt="おすすめ機能" src="https://github.com/user-attachments/assets/74c187c8-4ae1-4f7b-9d1b-66038abc5e7b" />
-<img width="2535" height="1330" alt="セットリスト作成" src="https://github.com/user-attachments/assets/612d9057-760f-4856-89b0-365f969ada5e" />
+<img width="2551" height="1331" alt="スクリーンショット 2025-12-14 183513" src="https://github.com/user-attachments/assets/61bcc62d-d5b4-44fe-bee2-1e3f38c86a31" /> 
+<img width="2519" height="1344" alt="スクリーンショット 2025-12-14 184000" src="https://github.com/user-attachments/assets/74c187c8-4ae1-4f7b-9d1b-66038abc5e7b" /> 
+<img width="2535" height="1330" alt="スクリーンショット 2025-12-14 183721" src="https://github.com/user-attachments/assets/612d9057-760f-4856-89b0-365f969ada5e" /> 
+<img width="2488" height="1304" alt="スクリーンショット 2025-12-14 184253" src="https://github.com/user-attachments/assets/8a157df0-fe4d-414b-bf4e-f821d5525887" /> 
+<img width="2388" height="1326" alt="スクリーンショット 2025-12-14 184307" src="https://github.com/user-attachments/assets/a38e31ca-aff3-45e2-984c-4fed998f7f5c" />
+<img width="2474" height="1316" alt="スクリーンショット 2025-12-14 184323" src="https://github.com/user-attachments/assets/9dedd466-273c-41cb-84d0-82d36855880e" />
+
 
 ## 💡 背景・課題 (Why)
 カラオケに行った際、「次、何を歌おう？」と悩み、履歴を探す時間を無駄にしてしまう経験から着想を得ました。
